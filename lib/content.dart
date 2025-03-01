@@ -7,4 +7,28 @@ With expertise in Flutter Web and app development, I bring ideas to life, whethe
 When I’m not coding, I’m probably exploring new tech, optimizing my existing projects, or brainstorming my next big idea. Let's build something awesome together!
 
 """;
+
+  static List<String> skills = [
+    'Python',
+    'Dart',
+    'Flutter',
+    'C',
+    'C++',
+    'Firebase',
+    'Riverpod',
+    'Provider',
+    'Bloc',
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Java',
+    'Appwrite',
+    'Git',
+    'Figma',
+    'Supabase',
+    'Hive',
+    'Isar',
+    'SQL'
+  ];
 }
