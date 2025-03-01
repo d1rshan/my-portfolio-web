@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/home_page.dart';
-// import 'package:portfolio/new_page.dart';
-import 'package:portfolio/theme.dart';
+import 'package:portfolio/themes/theme.dart';
 
 void main() {
   runApp(ProviderScope(child: const MyApp()));
