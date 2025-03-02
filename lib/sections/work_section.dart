@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -19,8 +21,10 @@ class WorkSection extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            'My Latest Work',
-            style: Theme.of(context).textTheme.displayMedium,
+            'My latest work',
+            style: Theme.of(context).textTheme.displayMedium?.copyWith(
+                  fontSize: min(screen.width * 0.15, 100),
+                ),
           ),
           Gap(10),
           // Here goes the work cards

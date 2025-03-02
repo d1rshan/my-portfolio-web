@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -20,7 +22,9 @@ class ContactSection extends StatelessWidget {
         children: [
           Text(
             'Contact me',
-            style: Theme.of(context).textTheme.displayMedium,
+            style: Theme.of(context).textTheme.displayMedium?.copyWith(
+                  fontSize: min(screen.width * 0.15, 100),
+                ),
           ),
           Gap(10),
           // Here goes the contact options

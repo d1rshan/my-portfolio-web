@@ -4,9 +4,7 @@ class Content {
 
 With expertise in Flutter Web and app development, I bring ideas to life, whether it’s a personal project, a startup idea, or a full-scale application. From API integrations to state management and custom UI designs, I ensure every app I build is efficient, scalable, and user-friendly.
 
-When I’m not coding, I’m probably exploring new tech, optimizing my existing projects, or brainstorming my next big idea. Let's build something awesome together!
-
-""";
+When I’m not coding, I’m probably exploring new tech, optimizing my existing projects, or brainstorming my next big idea. Let's build something awesome together!""";
 
   static List<String> skills = [
     'Python',

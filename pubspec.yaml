@@ -37,6 +37,7 @@ dependencies:
   responsive_builder: ^0.7.1
   gap: ^3.0.1
   flutter_riverpod: ^2.6.1
+  blurrycontainer: ^2.1.0
 
 dev_dependencies:
   flutter_test:
@@ -82,7 +83,7 @@ flutter:
         - asset: fonts/Inter_28pt-Bold.ttf
           weight: 700
         - asset: fonts/Inter_28pt-Medium.ttf
-          weight: 600
+          weight: 500
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

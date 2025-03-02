@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:portfolio/home_page.dart';
+// import 'package:portfolio/screens/home_page.dart';
+import 'package:portfolio/screens/mobile_page.dart';
 import 'package:portfolio/themes/theme.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'My Portfolio Website',
       theme: lightTheme,
-      home: HomePage(),
+      home: MobilePage(),
     );
   }
 }

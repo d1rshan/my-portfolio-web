@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:portfolio/themes/content.dart';
 import 'package:portfolio/components/my_skill_card.dart';
+import 'package:portfolio/themes/theme.dart';
 
 class SkillsSection extends StatelessWidget {
   const SkillsSection({
@@ -13,18 +14,17 @@ class SkillsSection extends StatelessWidget {
     final screen = MediaQuery.sizeOf(context);
 
     return Container(
-      padding: EdgeInsets.all(50),
-      height: screen.height,
+      padding: EdgeInsets.symmetric(horizontal: screen.width >= 800 ? 100 : 20),
       width: screen.width,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Text(
-            'My Skills',
-            style: Theme.of(context).textTheme.displayMedium,
+            'My skills',
+            style: sectionHeadingStyle(screen),
           ),
-          Gap(10),
+          Gap(5),
           Wrap(
             children: List.generate(
               Content.skills.length,

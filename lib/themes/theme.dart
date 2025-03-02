@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 final darkTheme = ThemeData(
@@ -38,25 +40,25 @@ final lightTheme = ThemeData(
   ),
   textTheme: TextTheme(
     displayLarge: TextStyle(
-      fontSize: 220,
       fontWeight: FontWeight.bold,
       letterSpacing: -14,
     ),
-    displayMedium: TextStyle(
-      fontSize: 100,
-      letterSpacing: -4,
-    ),
-    displaySmall: TextStyle(
-      color: Colors.grey.shade700,
-      fontSize: 40,
-      letterSpacing: -2,
-    ),
     titleMedium: TextStyle(
-      fontSize: 24,
-      fontWeight: FontWeight.bold,
+      fontSize: 22,
+      fontWeight: FontWeight.w600,
     ),
     bodyMedium: TextStyle(
       fontSize: 22,
+      color: Colors.grey.shade800,
     ),
   ),
 );
+
+TextStyle sectionHeadingStyle(Size screen) {
+  return TextStyle(
+    color: Colors.black,
+    letterSpacing: -4,
+    fontWeight: FontWeight.w500,
+    fontSize: min(screen.width * 0.14, 104),
+  );
+}

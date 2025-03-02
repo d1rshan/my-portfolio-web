@@ -1,3 +1,4 @@
+import 'package:blurrycontainer/blurrycontainer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gap/gap.dart';
@@ -78,7 +79,7 @@ class _HomePageState extends ConsumerState<HomePage> {
               children: [
                 IntroSection(key: sectionKeys[0]),
                 Gap(200),
-                AboutSection(key: sectionKeys[1]),
+                AboutSection(),
                 SkillsSection(key: sectionKeys[2]),
                 WorkSection(key: sectionKeys[3]),
                 ContactSection(key: sectionKeys[4]),
@@ -88,15 +89,30 @@ class _HomePageState extends ConsumerState<HomePage> {
 
           // TOP NAV BAR
           Positioned(
-            top: 30,
+            top: 20,
             left: 0,
             right: 0,
-            child: Center(
-              child: MyNavBar(onItemTap: _scrollToSection),
-            ),
+            child: Center(child: MyNavBar(onItemTap: _scrollToSection)),
           ),
         ],
       ),
+    );
+  }
+}
+
+class MyBlurBar extends StatelessWidget {
+  const MyBlurBar({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return BlurryContainer(
+      shadowColor: Colors.transparent,
+      height: 40,
+      elevation: 0,
+      borderRadius: BorderRadius.zero,
+      blur: 5,
+      color: Colors.white.withOpacity(0.02),
+      child: Container(),
     );
   }
 }
